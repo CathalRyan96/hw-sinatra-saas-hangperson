@@ -10,8 +10,13 @@ class HangpersonGame
 
   # Get a word from remote "random word" service
 
-  # def initialize()
-  # end
+   def initialize(word, guess = '',  wrong_guesses = '',check_win_or_lose = '', word_with_guesses = '')
+     @word = word
+     @guess = guess
+     @wrong_guesses = ''
+     @check_win_or_lose = ''
+     @word_with_guesses = ''
+  end
   
   def initialize(word)
     @word = word
